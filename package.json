@@ -1,0 +1,30 @@
+{
+  "name": "ezconf-language-support",
+  "displayName": "EzConf Language Support",
+  "description": "Syntax highlighting for the EzConf config language",
+  "version": "0.0.1",
+  "publisher": "alexs168",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ezcfg",
+      "aliases": ["EzConf", "ezcfg"],
+      "extensions": ["ezcfg"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ezcfg",
+      "scopeName": "source.ezcfg",
+      "path": "./syntaxes/ezcfg.tmLanguage.json"
+    }]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SuperCraftAlex/ezconf-vscode.git"
+  }
+}
